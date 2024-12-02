@@ -14,7 +14,7 @@ I recommend adding this package only in the development environment and not in p
 
 ```bash
 # using pip
-pip3 install python-decople-stubs
+pip3 install python-decouple-stubs
 
 # using poetry
 poetry install python-decouple
