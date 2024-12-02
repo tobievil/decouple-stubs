@@ -1,5 +1,7 @@
 # Stub File for python-decouple
 
+[![PyPI - Version](https://img.shields.io/pypi/v/python-decouple-stubs)](https://pypi.org/project/python-decouple-stubs/)
+
 This package enables static type checking for parameters retrieved from the config in the [python-decouple](https://pypi.org/project/python-decouple/) library.
 
 Tested with [basedpyright 1.15.2](https://pypi.org/project/basedpyright/)
@@ -15,8 +17,8 @@ I recommend adding this package only in the development environment and not in p
 pip3 install python-decople-stubs
 
 # using poetry
-poetry install python-decople
-poetry install python-decople-stubs --group=dev
+poetry install python-decouple
+poetry install python-decouple-stubs --group=dev
 ```
 
 ## Examples
