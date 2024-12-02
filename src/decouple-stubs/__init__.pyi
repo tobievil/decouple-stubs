@@ -76,7 +76,7 @@ class Config(object):
         option: str,
         default: T,
         cast: Undefined = undefined,
-    ) -> T | str: ...
+    ) -> Union[T, str]: ...
     @overload
     def __call__(
         self,
@@ -90,7 +90,7 @@ class Config(object):
         option: str,
         default: T,
         cast: Callable[[str], U],
-    ) -> T | U: ...
+    ) -> Union[T, U]: ...
     @overload
     def __call__(
         self,
@@ -104,7 +104,7 @@ class Config(object):
         option: str,
         default: T,
         cast: Undefined = undefined,
-    ) -> T | str: ...
+    ) -> Union[T, str]: ...
 
 class RepositoryEmpty(object):
     def __init__(
@@ -163,7 +163,7 @@ class AutoConfig(object):
         option: str,
         default: T,
         cast: Callable[[str], U],
-    ) -> T | U: ...
+    ) -> Union[T, U]: ...
     @overload
     def __call__(
         self,
@@ -177,7 +177,7 @@ class AutoConfig(object):
         option: str,
         default: T,
         cast: Undefined = undefined,
-    ) -> T | str: ...
+    ) -> Union[T, str]: ...
 
 config: AutoConfig
 
